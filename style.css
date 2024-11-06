@@ -1,0 +1,756 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Space+Grotesk:wght@300..700&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+}
+
+section {
+    height: fit-content;
+}
+
+@font-face {
+    font-family: "chalet";
+    src: url(assets/ChaletComprime\ CologneSixty.otf);
+}
+
+nav {
+    width: 100%;
+    height: 80px;
+    background: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: "Outfit", sans-serif;
+}
+
+.nav .main-logo {
+    padding-right: 20px;
+}
+
+.game-logo {
+    border-left: 2px solid #777;
+    padding-left: 10px;
+}
+
+.nav .logo {
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+}
+
+.nav .links a {
+    padding: 0 20px;
+    text-decoration: none;
+    list-style: none;
+    color: white;
+}
+
+.nav .user {
+    padding-right: 20px;
+
+}
+
+.nav .user .btn {
+    font-family: "Outfit", sans-serif;
+    padding: 8px 10px;
+    background: transparent;
+    border: 1px solid #fcfcfc;
+    color: #fff;
+    border-radius: 2px;
+}
+
+.nav .user i {
+    color: #fff;
+    padding: 0 20px;
+}
+
+/* section  */
+section {
+    width: 100%;
+    height: 100vh;
+}
+
+.home {
+    width: 100%;
+    height: 90vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.1)), url('assets/bg-home.jpg');
+    object-fit: contain;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    position: relative;
+    font-family: "Playwrite GB S", cursive;
+}
+
+.home {
+    overflow: hidden;
+}
+
+.home .black {
+    z-index: -1;
+    position: absolute;
+    z-index: 100;
+    width: 100%;
+    height: 600px;
+}
+
+.home .icons img {
+    padding-left: 20px;
+    width: 150px;
+}
+
+.home .icons {
+    padding: 40px 30px;
+}
+
+.home .info {
+    padding-left: 40px;
+    color: #fff;
+}
+
+.home .btns {
+    padding: 20px 50px;
+}
+
+.home .btns button {
+    font-family: "Playwrite GB S", cursive;
+    padding: 9px 20px;
+    border: 2px solid #fcfcfc;
+    background: transparent;
+    color: #fff;
+}
+
+
+/* about  */
+.about {
+    background: linear-gradient(45deg, #1c2833, #17202a);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.about .left img {
+    width: 600px;
+}
+
+.about .right {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.about .right img {
+    width: 250px;
+    padding: 20px 50px;
+}
+
+.about .right h2 {
+    color: #fff;
+    font-weight: bolder;
+    font-family: 'Space Grotesk';
+}
+
+.about .right .info {
+    margin: 10px 0;
+    width: 400px;
+    font-family: 'Titillium Web';
+    color: #999;
+}
+
+
+/* information  */
+.information {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background: linear-gradient(45deg, #1b2631, #212f3d);
+}
+
+.information .info {
+    order: -1;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.information .info img {
+    width: 200px;
+}
+
+.information .info .title {
+    color: #fff;
+    font-family: 'Space Grotesk';
+    font-weight: 900;
+    padding: 10px 0;
+}
+
+.information .info .message {
+    width: 550px;
+    padding: 10px 0;
+    color: #999;
+    font-family: 'Outfit';
+}
+
+.information .image {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.information .image img {
+    width: 600px;
+}
+
+.gallary {
+    background: linear-gradient(45deg, #060e15, #021528);
+}
+
+.gallary .image {
+    padding-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gallary .image img {
+    width: 700px;
+}
+
+.gallary .info {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: #999;
+}
+
+.gallary .info .title {
+    color: #fff;
+    font-family: 'Space Grotesk';
+}
+
+.gallary .info .message {
+    color: #999;
+    width: 700px;
+    font-family: 'Outfit';
+
+}
+
+
+
+/* features  */
+
+.features {
+    height: fit-content;
+    background: linear-gradient(45deg, #212f3d, #1b2631);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+}
+
+.features .flip .message {
+    place-self: center;
+    padding-right: 40px;
+    order: -1;
+}
+
+.features .card {
+    display: grid;
+    grid-template-columns: 800px 200px;
+    align-items: center;
+    width: 100%;
+    height: 400px;
+}
+
+.features .card img {
+    place-self: center;
+    margin: 0 !important;
+    width: 600px;
+}
+
+.features .card .message {
+    width: 400px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.features .card .message .game-title {
+    font-family: 'Space Grotesk';
+    color: #fff;
+}
+
+.features .card .message .description {
+    color: #999;
+    font-family: 'Outfit';
+}
+
+
+
+.buy {
+    background: linear-gradient(45deg, #17202a, #1c2833);
+    display: grid;
+    height: 120vh !important;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-content: center;
+}
+
+.buy .card {
+    margin: 40px 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 450px;
+    height: 500px;
+    border: 2px solid #333;
+    background: #000;
+}
+
+.buy .card:nth-child(1) {
+    background: url("assets/section-1.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.buy .card:nth-child(2) {
+    background: url("assets/section2.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.buy .card img {
+    width: 250px;
+}
+
+.buy .card-info {
+    place-self: center;
+    width: 80%;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    border: 2px solid #444;
+    background: #000;
+    grid-column: span 2 !important;
+}
+
+.buy .card .data .name {
+    color: #fff;
+    font-family: 'Space Grotesk';
+}
+
+.buy .card .data .platform {
+    font-family: 'Outfit';
+    color: #e4e4e4;
+}
+
+.buy .card .data {
+    padding: 10px 0;
+}
+
+.buy .card .btn {
+    border: 3px solid #999;
+    color: #fff;
+    padding: 10px 50px;
+    background: #000;
+}
+
+.buy .card .btn:hover {
+    background: #999;
+    color: #000;
+}
+
+.buy .card-info h2 {
+    color: #fff;
+    font-size: 16px;
+    font-family: 'Outfit';
+}
+
+
+/* footer  */
+
+footer {
+    width: 100%;
+    height: 50vh;
+    background: linear-gradient(45deg, #000, #010101);
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    color: #fcfcfc;
+}
+
+.footer .top {
+    display: flex;
+    margin-top: 40px;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.footer .links ul li a {
+    color: #fcfffc;
+    text-decoration: none;
+}
+
+.footer .links ul li {
+    list-style: none;
+    padding: 5px 0;
+}
+
+.footer .top .icons .icon i {
+    padding: 0 10px;
+    font-size: 20px;
+}
+
+.footer .top .icons .icon i:hover {
+    color: blue;
+}
+
+.footer .bottom {
+    display: flex;
+    align-items: end;
+    margin: 20px 0;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.footer .bottom .middle .link li {
+    list-style: none;
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.footer .bottom .middle .link li a {
+    color: #fcfcfc;
+    text-decoration: none;
+}
+
+.footer .bottom .left {
+    padding-left: 20px;
+}
+
+.footer .bottom .right {
+    padding-right: 20px;
+}
+
+
+
+
+
+/* hover effect  */
+li a:hover {
+    cursor: pointer;
+    color: #bdc3c7 !important;
+}
+
+button:hover {
+    cursor: pointer !important;
+    color: #fff !important;
+}
+
+/* overflow control  */
+section {
+    overflow-x: hidden;
+}
+
+
+/* RESPONSIVE DESIGN  */
+
+@media screen and (width < 1080px) {
+
+    /* nav  */
+    .nav .links a {
+        padding: 0 10px;
+    }
+
+    .home {
+        overflow: hidden;
+    }
+
+    .home .icons img {
+        width: 110px;
+    }
+
+    /* about  */
+    .about {
+        overflow: hidden;
+    }
+
+    .about .left {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .about .left img {
+        width: 420px;
+    }
+
+    .about .right .info {
+        width: 300px;
+    }
+
+    .about .right .info-add {
+        display: none;
+    }
+
+    /* information */
+    .information {
+        overflow: hidden;
+    }
+
+    .information .info img {
+        margin: 0 !important;
+        width: 100px !important;
+    }
+
+    .information .info .message {
+        width: 380px;
+        text-align: start !important;
+    }
+
+    .information .image img {
+        width: 420px;
+    }
+
+    /* gallary */
+    .gallary {
+        overflow: hidden;
+    }
+
+    .gallary .image img {
+        width: 550px;
+    }
+
+
+    /* features */
+    .features .card {
+        grid-template-columns: 500px 500px;
+    }
+
+    .features .card img {
+        width: 450px;
+    }
+
+    .features .card .message {
+        width: 400px;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* buy card  */
+    .buy {
+        overflow: hidden;
+
+    }
+
+    .buy .card img {
+        width: 220px;
+    }
+
+    .buy .card {
+        margin: 50px 70px;
+        width: 370px;
+        height: 420px;
+    }
+
+    .buy .card-info {
+        margin-bottom: 40px;
+        height: 30px;
+    }
+
+    .buy .card-info .message {
+        font-size: 14px;
+    }
+}
+
+
+
+/* MOBILE  */
+
+@media screen and (width < 768px) {
+
+    /* auto height  */
+    section {
+        height: fit-content !important;
+    }
+
+    /* nav  */
+    .nav {
+        height: 50px;
+    }
+
+    .nav .logo img:nth-child(1) {
+        width: 100px;
+    }
+
+    .nav .links {
+        display: none;
+    }
+
+    .nav .user {
+        display: none;
+    }
+
+    /* home  */
+    .home .icons {
+        margin-top: 70px;
+    }
+
+    .home .icons img {
+        width: 110px;
+    }
+
+    .home .info h2 {
+        font-size: 18px;
+    }
+
+    .home .btns {
+        margin-top: 40px;
+    }
+
+    .home .btns button {
+        margin: 10px 0;
+    }
+
+    /* about  */
+    .about .left img {
+        width: 300px;
+    }
+
+    .about .left {
+        align-items: center;
+        justify-content: center;
+        display: flex;
+    }
+
+    .about {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .about .right .info {
+        width: 250px;
+    }
+
+    /* informatin  */
+    .information {
+        padding: 0;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        align-items: center;
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+
+    .information .info img {
+        width: 200px;
+    }
+
+    .information .info .message {
+        width: 320px;
+        text-align: start !important;
+    }
+
+    .information .image img {
+        width: 250px;
+    }
+
+
+    /* gallary  */
+    .gallary .image img {
+        width: 320px;
+    }
+
+    .gallary .info .message {
+        width: 250px;
+    }
+
+
+    /* features */
+    .features .card {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .features .card img {
+        width: 320px;
+    }
+
+    .features .flip {
+        order: 1;
+    }
+
+    .features .card .description {
+        width: 280px;
+    }
+
+    .features .flip .message {
+        order: 1;
+    }
+
+
+    /* buy  */
+    .buy {
+        display: flex !important;
+        flex-direction: column;
+        height: fit-content !important;
+    }
+
+    .buy .card {
+        width: 350px;
+    }
+
+    .buy .card-info {
+        padding: 30px 0;
+        margin-bottom: 10px;
+    }
+
+    .buy .card-info h2 {
+        font-size: 12px !important;
+    }
+
+
+    /* footer  */
+    footer {
+        height: fit-content;
+    }
+
+    .footer .bottom {
+        display: flex;
+        align-items: start;
+        flex-direction: column;
+        margin: 20px 0;
+        width: 100%;
+        justify-content: center;
+        padding: 20px 0;
+        text-align: center;
+    }
+
+    .footer .bottom .middle .link li a {
+        font-size: 14px !important;
+    }
+
+    .footer .bottom .right {
+        margin-top: 10px;
+        place-self: center;
+        padding-left: 30px;
+    }
+
+    .footer .bottom .left {
+        place-self: center;
+        margin: 10px 0;
+        display: flex;
+    }
+
+}
